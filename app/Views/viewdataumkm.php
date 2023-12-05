@@ -30,7 +30,7 @@
 
               <div class="card-body">
               <p>
-              <button type="button" class="btn btn-success" onclick="window.location='<?php echo site_url('home/formtambah'); ?>'">Tambah Data kriteria </button>
+              <button type="button" class="btn btn-success" onclick="window.location='<?php echo site_url('Home/forminput'); ?>'">Tambah Data kriteria </button>
               </p>
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
@@ -63,9 +63,9 @@
                     <td><?= $row->c4; ?></td>
                     
                     <td>
-                    <a href="/home/formeditmbl/<?=$row->id_nilai;?>" class="badge badge-warning">Edit</a>  
-                    <a href="/home/deletembl/<?=$row->id_nilai;?>" class="badge badge-danger">Hapus</a>
-                  <form action="/home/deletembl/<?=$row->id_nilai; ?>" method="post">
+                    <a href="/home/formeditdata/<?=$row->id_nilai;?>" class="badge badge-warning">Edit</a>  
+                    <a href="/home/deletedata/<?=$row->id_nilai;?>" class="badge badge-danger">Hapus</a>
+                  <form action="/home/deletedata/<?=$row->id_nilai; ?>" method="post">
                   <?=csrf_field(); ?>
                   <input type="hidden" name="_method" value="DELETE">
                   <!-- <button type="submit" class="btn btn-danger">Delete</button> -->
