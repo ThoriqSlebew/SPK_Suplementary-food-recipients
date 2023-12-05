@@ -7,8 +7,8 @@
       <span class="brand-text font-weight-light">PEMKOT Malang</span>
     </a>
 
-    
-    
+
+
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
@@ -27,59 +27,59 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="<?php echo site_url('Home/callviewjenisusaha');?>" class="nav-link">
+                <a href="<?php echo site_url('Home/callviewalternatif'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Alternatif</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo site_url('Home/callviewdatakriteria');?>" class="nav-link">
+                <a href="<?php echo site_url('Home/callviewdatakriteria'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Kriteria</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo site_url('Home/callviewdataumkm');?>" class="nav-link">
+                <a href="<?php echo site_url('Home/callviewnilaialternatif'); ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Data Nilai Kriteria</p>
+                  <p>Data Nilai Alternatif</p>
                 </a>
               </li>
             </ul>
           </li>
-          
+
           <li class="nav-item">
-            <a href="<?php echo site_url('Home/callviewhitung');?>" class="nav-link">
+            <a href="<?php echo site_url('Home/callviewhitung'); ?>" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-              Nilai Max/Min
+                Nilai Max/Min
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url('Home/callviewnormalisasi');?>" class="nav-link">
+            <a href="<?php echo site_url('Home/callviewnormalisasi'); ?>" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-              Hitung Normalisasi
+                Hitung Normalisasi
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url('Home/callviewranking');?>" class="nav-link">
+            <a href="<?php echo site_url('Home/callviewranking'); ?>" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-              Hitung Perangkingan
+                Hitung Perangkingan
               </p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?php echo site_url('Home/callviewkeputusan');?>" class="nav-link">
+            <a href="<?php echo site_url('Home/callviewkeputusan'); ?>" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-              Hasil Keputusan
+                Hasil Keputusan
               </p>
             </a>
           </li>
-          
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

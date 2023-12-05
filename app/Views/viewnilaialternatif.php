@@ -4,11 +4,11 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Suplementary Food Recipients</h1>
+          <h1>Suplementary Food Recipiens</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item active">Data Kriteria</li>
+            <li class="breadcrumb-item active">Data nilai Kriteria</li>
           </ol>
         </div>
       </div>
@@ -24,37 +24,57 @@
           <!-- /.card -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Data Kriteria </h3>
+              <h3 class="card-title">List Nilai Alternatif</h3>
             </div>
             <!-- /.card-header -->
 
             <div class="card-body">
-
+              <p>
+                <button type="button" class="btn btn-success" onclick="window.location='<?php echo site_url('Home/forminput'); ?>'">Tambah Data kriteria </button>
+              </p>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th>No.</th>
-                    <th>Nama Kriteria</th>
-                    <th>Nilai Kriteria</th>
-                    <th>Tipe Kriteria</th>
+                    <th>Kode Alternatif</th>
+                    <th>Nama Alternatif</th>
+                    <th>C1</th>
+                    <th>C2</th>
+                    <th>C3</th>
+                    <th>C4</th>
+
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
+
                   <?php
                   $no = 0;
                   foreach ($dataMb as $row) :
                     $no++;
                   ?>
                     <tr>
-                      <th> <?= $row->id_kriteria; ?></th>
-                      <td><?= $row->nama_kriteria; ?></td>
-                      <td><?= $row->nilai_kriteria; ?></td>
-                      <td><?= $row->tipe_kriteria; ?></td>
+                      <td><?= $row->id_nilai; ?></td>
+                      <td><?= $row->kode_alternatif; ?></td>
+                      <td><?= $row->nama_alternatif; ?></td>
+                      <td><?= $row->c1; ?></td>
+                      <td><?= $row->c2; ?></td>
+                      <td><?= $row->c3; ?></td>
+                      <td><?= $row->c4; ?></td>
+
+                      <td>
+                        <a href="/Home/formeditdata/<?= $row->id_nilai; ?>" class="button button-warning">Edit</a>
+                        <a href="/Home/deletedata/<?= $row->id_nilai; ?>" class="button button-danger">Hapus</a>
+                      </td>
+
                     </tr>
+
                   <?php
                   endforeach;
                   ?>
+
                 </tbody>
+
               </table>
             </div>
 

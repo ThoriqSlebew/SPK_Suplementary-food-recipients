@@ -1,11 +1,11 @@
-<footer class="main-footer">  
-    <strong>Copyright &copy; 2023 <a href="https://adminlte.io">DSS Suplementary Food Recipients - @Kelompok3</a>.</strong> All rights reserved.
-  </footer>
+<footer class="main-footer">
+  <strong>Copyright &copy; 2023 <a href="https://adminlte.io">DSS Suplementary Food Recipients - @Kelompok3</a>.</strong> All rights reserved.
+</footer>
 
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+  <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 <base href="<?= base_url("assets") ?>/">
@@ -32,9 +32,11 @@
 <script src="dist/js/demo.js"></script>
 <!-- Page specific script -->
 <script>
-  $(function () {
+  $(function() {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "responsive": true,
+      "lengthChange": false,
+      "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
@@ -49,4 +51,5 @@
   });
 </script>
 </body>
+
 </html>
