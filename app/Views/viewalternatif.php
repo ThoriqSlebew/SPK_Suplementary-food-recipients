@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item active">Data Kriteria</li>
+            <li class="breadcrumb-item active">Data Alternatif</li>
           </ol>
         </div>
       </div>
@@ -24,7 +24,7 @@
           <!-- /.card -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Data Kriteria </h3>
+              <h3 class="card-title">Nama Alternatif</h3>
             </div>
             <!-- /.card-header -->
 
@@ -34,27 +34,29 @@
                 <thead>
                   <tr>
                     <th>No.</th>
-                    <th>Nama Kriteria</th>
-                    <th>Nilai Kriteria</th>
-                    <th>Tipe Kriteria</th>
+                    <th>NIP</th>
+                    <th>Nama</th>
                   </tr>
                 </thead>
                 <tbody>
+
                   <?php
                   $no = 0;
                   foreach ($dataMb as $row) :
                     $no++;
                   ?>
                     <tr>
-                      <th> <?= $row->id_kriteria; ?></th>
-                      <td><?= $row->nama_kriteria; ?></td>
-                      <td><?= $row->nilai_kriteria; ?></td>
-                      <td><?= $row->tipe_kriteria; ?></td>
+                      <th> <?= $row->id_alternatif; ?></th>
+                      <td><?= $row->nip; ?></td>
+                      <td><?= $row->nama; ?></td>
                     </tr>
+
                   <?php
                   endforeach;
                   ?>
+
                 </tbody>
+
               </table>
             </div>
 

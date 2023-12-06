@@ -44,22 +44,22 @@
                     foreach ($dataMb['B2'] as $y) :
                       foreach ($dataMb['B3'] as $z) :
                         foreach ($dataMb['B4'] as $a) :
-                        $no++;
-                        foreach ($dataMb['maxmin'] as $rowx) :
+                          $no++;
+                          foreach ($dataMb['maxmin'] as $rowx) :
 
                 ?>
-                          <tr>
-                            <th> <?= $no; ?></th>
-                            <td><?= $row->nama_alternatif; ?></td>
+                            <tr>
+                              <th> <?= $no; ?></th>
+                              <td><?= $row->nama_alternatif; ?></td>
 
-                            <?php $jumlah = round(($row->c1/$rowx->maxminK1)*$x->nilai_kriteria,3)+round(($row->c2/$rowx->maxminK2)*$y->nilai_kriteria,3)+round(($rowx->maxminK3/$row->c3)*$z->nilai_kriteria,3)+round(($row->c4/$rowx->maxminK4)*$a->nilai_kriteria,3);?>
-                  <td><?= $jumlah ?></td>
-                            <td><?php if ($jumlah > 0.6) {
-                                  echo "Layak";
-                                } else {
-                                  echo "Tidak Layak";
-                                } ?></td>
-                          </tr>
+                              <?php $jumlah = round(($row->c1 / $rowx->maxminK1) * $x->nilai_kriteria, 3) + round(($row->c2 / $rowx->maxminK2) * $y->nilai_kriteria, 3) + round(($rowx->maxminK3 / $row->c3) * $z->nilai_kriteria, 3) + round(($row->c4 / $rowx->maxminK4) * $a->nilai_kriteria, 3); ?>
+                              <td><?= $jumlah ?></td>
+                              <td><?php if ($jumlah > 0.6) {
+                                    echo "Layak";
+                                  } else {
+                                    echo "Tidak Layak";
+                                  } ?></td>
+                            </tr>
                 <?php
                           endforeach;
                         endforeach;
