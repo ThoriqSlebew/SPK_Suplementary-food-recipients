@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SPK UMKM</title>
+  <title>SPK PMT</title>
   <link rel="shortcut icon" type="image/png" href="dist/img/logomalang.png">
 
   <base href="<?= base_url("assets") ?>/">
